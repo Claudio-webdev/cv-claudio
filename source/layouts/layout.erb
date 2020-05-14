@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "De Bernardi Claudio" %></title>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <%= yield %>
+    
+  <script src="https://cdn.jsdelivr.net/npm/verge@1.10.2/verge.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> 
+    <script src="https://kit.fontawesome.com/2a72c41660.js" crossorigin="anonymous"></script>
+
+    <%= javascript_include_tag "site" %>
+
+
+
+  </body>
+</html>

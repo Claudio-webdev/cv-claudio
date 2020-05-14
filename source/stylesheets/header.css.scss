@@ -1,0 +1,255 @@
+.header{
+	position: relative;
+
+	&-topside{
+		position: relative;
+		width: 20%;
+		height: 40px;
+		padding-top: 40px;
+		float: right;
+		@media screen and(max-width: 768px){
+				width: 40%;
+			}
+	
+		i{
+			font-size: 30px;
+			margin-right: 50px;
+			@media screen and(max-width: 375px){
+				font-size: 20px;
+			}	
+			&:hover{
+			color: #FF2400;
+			transition:all ease .5s;
+			justify-content:left;
+			}
+
+			
+		}
+		a{
+			color: #dfe0e4;
+		}
+
+	}
+	&-menu-dropdown{
+		transition:all ease .5s;
+		position: fixed;
+	    background: -webkit-linear-gradient(right, #333333 0%, #1d1d1d 100%);
+	    background: -o-linear-gradient(right, #333333 0%, #1d1d1d 100%);
+	    background: linear-gradient(to left, #333333 0%, #1d1d1d 100%);
+		background-color: #333333;
+		border-radius: 0px 50px  50px 0;
+		z-index: 20;
+	    top: 70px;
+
+		width: 200px;
+		height: 150px;
+		text-align: center;
+		text-transform: uppercase;
+		@media screen and(max-width: 768px){
+			left: 0;
+			}
+		ul{
+			position: relative;
+			top: 50%;
+			transform:translateY(-50%);
+		}
+		li{
+			line-height: 2;
+			&:hover{
+				color:#FF2400;
+				cursor: pointer; 
+			}
+		}
+	
+	}
+	&-scroll-menu{
+	    position: fixed;
+	    top: 40px;
+	    z-index: 20;
+	    -webkit-transition: all ease .5s;
+	    transition: all ease .5s;
+
+	    &:hover{
+	    	cursor: pointer;
+	    	color: #ff2400;
+	    }
+    	i{
+    		margin-right: 40px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 50%;
+    		@media screen and(max-width: 375px){
+				font-size: 20px;
+				justify-content:left;
+			}
+    	}
+	}
+	&-scroll-menu_close{
+	    position: fixed;
+	    top: 40px;
+	    z-index: 20;
+	    -webkit-transition: all ease .5s;
+	    transition: all ease .5s;
+	    &:hover{
+	    	cursor: pointer;
+	    	color: #ff2400;
+	    }
+    	i{
+    		margin-right: 43px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 50%;
+    		@media screen and(max-width: 375px){
+				font-size: 20px;
+				justify-content:left;
+			}
+    	}
+	}
+	&_menu_item{
+	    position: relative;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translateY(-50%);
+	    transform: translate(-50%, -50%);
+	    text-transform: uppercase;
+	    text-align: center;
+	    width: 60%;
+		pointer-events: none;
+
+	}
+	&-title{
+		position: relative;
+    	text-align: center;
+    	padding-top: 15%;
+		margin-bottom:100px; 
+    	left: 50%;
+    	transform: translateX(-50%);
+
+		h1{
+			font-size: 80px;
+			justify-content:center;
+			line-height: 1.5;
+			font-family: 'kanitextrabold';
+		    display: flex;
+    		position: relative;
+    		@media screen and(max-width: 375px){
+				font-size: 50px;
+				margin-top: 40px;
+				justify-content:left;
+
+			}
+		}
+		p{
+			font-size: 45px;
+			position: relative;
+			text-align: center;
+			@media screen and(max-width: 375px){
+				font-size: 30px;
+
+			}
+		}
+		button{
+			background-color: transparent;
+			border:none;
+			font-size: 15px;
+			margin-top: 15%;
+			position: relative;
+			color: #dfe0e4;
+			outline:none;
+			@media screen and(max-width: 375px){
+				display: none;
+
+			}
+			&:hover{
+				cursor: pointer;
+			}
+
+		}
+		&-arrow{
+			i{
+				font-size: 50px;
+				padding-top: 10px;
+			}
+		}
+	}
+	&-btn{
+		border-radius: 50px 50px 0 0;
+		position: relative;
+		width: 150px;
+		height: 100%;
+		background-color:	#FF2400;
+		color: #1d1d1d;
+		&:hover{
+			color: #dfe0e4;
+		}
+	}
+	&-leftside{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 30px;
+	width: 50%;
+	transform:rotate(90deg);
+	transform-origin: bottom left;
+	cursor: pointer;
+	@media  screen and (max-width: 768px) {
+		display: none;
+	}
+	:hover{
+		background-color: transparent;
+		transition:all ease .5s;
+		border: .7px solid 	#FF2400;
+
+	}
+		&_experience{
+			left: 70%;
+		}
+	}
+	&-rightside{
+	position: absolute;
+	z-index: 2;
+	width: 50%;
+	height: 30px;
+	display: flex;
+	justify-content: flex-end;
+	right: 0;
+	transform:rotate(-90deg);
+	transform-origin: bottom right;
+	cursor: pointer;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
+	:hover{
+		transition:all ease .5s;
+		background-color: transparent;
+		border: .7px solid 	#FF2400;
+	}
+		&_about{
+			right: -15%;
+		}
+		&_contact{
+			left: -70%;
+		}
+	}
+	&-background-pic{
+		position: absolute;
+		opacity: .1;
+		img{
+			@media screen and (min-width: 768px){
+			width: 800px;
+    		position: relative;
+    		top: -125px;
+			}
+			@media screen and (max-width: 768px){
+display: none;
+			}
+		}
+
+	}
+}
+.space{
+	padding-left: 20px;
+}
+
+
+
