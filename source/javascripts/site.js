@@ -1,10 +1,11 @@
 //Click Events
-const menuBtns 	   = Array.from(document.querySelectorAll('.js-toSection'))
-const topBar 	     = document.querySelector('.js-top')
-const about 	     = document.querySelector('.js-about')
+const menuBtns     = Array.from(document.querySelectorAll('.js-toSection'))
+const topBar       = document.querySelector('.js-top')
+const goBack       = document.querySelector('.js-toTop')
+const about        = document.querySelector('.js-about')
 const experience   = document.querySelector('.js-experience')
-const contact 	   = document.querySelector('.js-contact')
-const goDown 	     = document.querySelector('.js-goDown')
+const contact      = document.querySelector('.js-contact')
+const goDown       = document.querySelector('.js-goDown')
 const menuOpen     = document.querySelector('.js-openMenu')
 const menuList     = document.querySelector('.js-menuList')
 const menuClose    = document.querySelector('.js-closeMenu')
@@ -26,8 +27,7 @@ function init(){
   reset()
   setHome()
   titleAnimation()
-  closeMenu()
-  openMenu()
+
 }
 
 //RESET
@@ -38,17 +38,7 @@ function reset(){
   paragraphes.forEach((el,i)=>{
     gsap.to(el, {duration: 0 ,opacity: 0,y: 25})
   })
-/*  if(window.innerWidth > 786){
-    menuOpen.style.display = "none"
-    menuClose.style.display = "none"
-    menuList.style.display = "none"
 
-   }else{
-    menuOpen.style.display = "block"
-    menuClose.style.display = "block"
-    menuList.style.display = "block"
-   }
-*/
 }
 function setHome(){
   gsap.to(imgBack, {opacity:0, duration:0});
@@ -78,8 +68,14 @@ goDown.addEventListener('click', ()=>{
           behavior: 'smooth'
       })
 })
+goBack.addEventListener('click', ()=>{
+      topBar.scrollIntoView({
+          behavior: 'smooth'
+      })
+})
 
 function goToSection(i) {
+  console.log(i)
    if (i == 0 ) {
       about.scrollIntoView({
           behavior: 'smooth'
@@ -88,31 +84,15 @@ function goToSection(i) {
     experience.scrollIntoView({
         behavior: 'smooth'
       }) 
-    }else if (i ==3){
-     topBar.scrollIntoView({
+    }else if (i == 2){
+     contact.scrollIntoView({
         behavior: 'smooth'
       })      
-  } else {
-    contact.scrollIntoView({
-        behavior: 'smooth'
-      })
   }
 
 
 }
 
-
-function openMenu(){
-  menuOpen.addEventListener('click', ()=>{
-
-
-  })
-}
-function closeMenu(){
-  menuClose.addEventListener('click', ()=>{
-
-  })
-}
 //ANIMATIONS
 
   function titles_animation(y) {

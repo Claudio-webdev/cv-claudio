@@ -1,47 +1,21 @@
 .experience{
-	margin-top: 50px;
-	padding-bottom: 100px;
 	position: relative;
 	width: 100%;
 	display: flex;
+	padding-top: 100px;
 	background: linear-gradient(to bottom, #1d1d1d 0%,#333333 100%);
-
-		@media screen and(max-width: 375px){
-		    display: block;
-		    top: 387px;
-	background: linear-gradient(to bottom, #1d1d1d 0%,#1d1d1d 100%);
-		    
-		}
-	a{
-		text-decoration: none;
-		color:#dfe0e4;
-		font-family: 'kanitbold_italic';
-		&:hover{
-		color: #FF2400;
-
-		}
-	}
-	h2{
-		padding-bottom: 80px;
-		color: #FF2400;
-	}
-	&-leftside{
+	  @media screen and(max-width: 375px){
+            display: block;
+        } 
+	&_contents{
+		margin: 40px;
 		position: relative;
-		width: 70%;
-		@media screen and(max-width: 375px){
-				width: 80%;
-			}
-	}
-	&-inner{
-		position: relative;
-		width: 80%;
-		top: 50%;
-		left: 50%;
-		transform:translate(-50%, -50%);
-		@media screen and(max-width: 375px){
-		    width: 89%;
-		    position: relative;
-		    left: 60%;
+		width: 60%;
+		@media screen and(max-width: 375px) {
+			margin: 0px;
+			width: 85%;
+			left: 50%;
+			transform:translateX(-50%);
 		}
 		h2{
 			padding-bottom: 80px;
@@ -49,29 +23,30 @@
 		}
 		p{
 			font-family: 'kanitextralight';
-			padding-bottom: 40px;
 			font-size: 20px;
 			line-height: 1.3;
-			@media screen and(max-width: 768px){
-				font-size: 15px;
-			}
 		}
+		a{
+			text-decoration: none;
+			color: #dfe0e4;
+    		font-family: 'kanitextrabold';
+    		&:hover{
+			color: #FF2400;
+    		}
+
+		}
+	}
+	&_img{
+		position: relative;
+		width: 40%;
+		@media screen and(max-width: 375px){
+            display: none;
+        } 
 		img{
 			width: 200px;
 			transform:rotate(-180deg);
 			top: -30%;
 			opacity: .4;
-			@media screen and(max-width: 768px){
-				width:  150px;
-			}
 		}
-	}
-	&-rightside{
-		position: relative;
-		width: 30%;
-				@media screen and(max-width: 375px){
-				display: none;
-			}
-
 	}
 }
