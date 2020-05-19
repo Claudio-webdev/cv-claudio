@@ -13,7 +13,7 @@
     overflow:hidden;
     box-shadow: 0 4px 8px 0 #dfe0e4, 0 10px 25px 0 #8e8e85;
 
-    @media screen and(max-width: 400px) {
+    @media screen and(max-width: 768px) {
         height: 200px;
         width: 100%;
     }
@@ -24,7 +24,7 @@
       display: inline block;
       margin-right:-4px;
       object-fit:cover;
-      @media screen and(max-width: 400px) {
+      @media screen and(max-width: 768px) {
         height: 200px;
       }
     }
