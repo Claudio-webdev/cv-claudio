@@ -15,8 +15,10 @@ const imgBack      = document.querySelector('.js-background')
 const subTitle     = document.querySelector('.js-subtitle')
 const sectionTitle = Array.from(document.querySelectorAll('.js-sectionTitle'))
 const paragraphes  = Array.from(document.querySelectorAll('.js-p'))
+const filter       = document.querySelector('.filter')
 
 var index = 0;
+
 
  if (window.innerWidth >768){
   init() 
@@ -49,6 +51,9 @@ function setHome(){
 dropdownList.forEach((el,i)=>{
    el.addEventListener('click',()=> {
         goToSection(i)
+        close()
+
+
     })
 
 })
@@ -75,7 +80,6 @@ goBack.addEventListener('click', ()=>{
 })
 
 function goToSection(i) {
-  console.log(i)
    if (i == 0 ) {
       about.scrollIntoView({
           behavior: 'smooth'
@@ -156,15 +160,24 @@ if (window.innerWidth > 375){
 }
 //click event
 
-menuOpen.addEventListener('click',()=>{
-  menuOpen.classList.toggle('hide')
-  menuClose.classList.toggle('hide')
-  menuList.classList.toggle('hide')
-})
-menuClose.addEventListener('click',()=>{
-  menuOpen.classList.toggle('hide')
-  menuClose.classList.toggle('hide')
-  menuList.classList.toggle('hide')
-})
+  menuOpen.addEventListener('click',()=>{
+    open()
+  })
 
+  menuClose.addEventListener('click',()=>{
+    close()
+  })
+
+function close(){
+  menuOpen.classList.toggle('hide')
+  menuClose.classList.toggle('hide')
+  menuList.classList.toggle('hide')
+  filter.classList.toggle('blur')
+}
+function open(){
+  menuOpen.classList.toggle('hide')
+  menuClose.classList.toggle('hide')
+  menuList.classList.toggle('hide')
+  filter.classList.toggle('blur')
+}
 

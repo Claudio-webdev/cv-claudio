@@ -6,7 +6,12 @@
 		@media screen and(max-width: 768px){
 	background: linear-gradient(to bottom,#333333  0%,#1d1d1d 100%);
 			}
-
+	img{
+		@media screen and(max-width: 400px){
+				width: 100%;
+				position:relative;
+			}
+	}
 	h2{
 		padding-bottom: 80px;
 		color: #FF2400;
@@ -22,9 +27,7 @@
 		text-decoration: none;
 		color: #dfe0e4;
 		font-size: 30px;
-		@media screen and(max-width: 768px){
-				font-size: 20px;
-			}
+
 	}
 
 	&-contact{
@@ -34,6 +37,9 @@
 		left: 50%;
 		transform: translateX(-50%);
 		text-align: center;
+		@media screen and(max-width: 768px){
+				width: 70%;
+			}
 		a:hover{
 			color: #FF2400;
 		}
@@ -44,6 +50,7 @@
 		margin-top: 30px;
 		a{
 		font-size: 20px;
+
 		}
 		
 	}
