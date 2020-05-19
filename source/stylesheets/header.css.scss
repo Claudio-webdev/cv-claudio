@@ -5,7 +5,7 @@
 	width: 100%;
 	height: 50px;
 	margin: 10px;
-           @media screen and(max-width: 375px){
+           @media screen and(max-width: 768px){
             position: fixed;
             background-color: #1d1d1d;
             z-index: 10;
@@ -18,7 +18,7 @@
 		font-size: 50px;
 		margin-right: 140px;
         z-index: 4;
-        @media screen and(max-width: 375px){
+        @media screen and(max-width: 768px){
             padding-right:100px;
             margin-right: 0px;
         } 
@@ -37,7 +37,7 @@
         i{
             margin-left: 50px;
             padding: 10px 0;
-            @media screen and (max-width: 375px) {
+            @media screen and (max-width: 768px) {
                 margin-left: 20px;
             }
             &:hover{
@@ -53,7 +53,7 @@
     position: relative;
     background-color: 1d1d1d;
     height: 720px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         height: 600px;
     }
     &-scroll-menu_close{
@@ -62,7 +62,7 @@
         margin-right: 90px;
         z-index: 5;
         right: 0;
-        @media screen and(max-width: 375px){
+        @media screen and(max-width: 768px){
             padding-right:60px;
             margin-right: 0px;
         } 
@@ -106,7 +106,7 @@
         text-align: center;
         border-radius: 25px 25px 0 0;
         z-index: 4;
-        @media screen and(max-width: 375px){
+        @media screen and(max-width: 768px){
             display: none;
         } 
         &:hover{
@@ -147,7 +147,7 @@
         opacity: .1;
         top: -20%;
         z-index: 2;
-       @media screen and(max-width: 375px){
+       @media screen and(max-width: 768px){
             display: none;
         } 
       
@@ -160,12 +160,12 @@
         text-align: center;
         margin-top: 65px;
         z-index: 5;
-        @media screen and(max-width: 375px){
+        @media screen and(max-width: 768px){
             display: none;
         }
         &_mobile{
             display: none;
-            @media screen and (max-width: 375px){
+            @media screen and (max-width: 768px){
                 display: block;
                 top: 35%;
                 position: relative;

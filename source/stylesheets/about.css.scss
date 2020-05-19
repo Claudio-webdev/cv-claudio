@@ -3,14 +3,14 @@
 	width: 100%;
 	display: block;
 	padding-top: 100px;
-	@media screen and (max-width: 375px){
+	@media screen and (max-width: 768px){
 		padding-top: 0px;
 	}
 	&_section{
 		position: relative;
 		display: flex;
 		width: 100%;
-		  @media screen and(max-width: 375px){
+		  @media screen and(max-width: 768px){
             display: block;
             padding-top: 100px;
         } 
@@ -18,7 +18,7 @@
 			margin: 60px;
 			position: relative;
 			width: 50%;
-			@media screen and(max-width: 375px){
+			@media screen and(max-width: 768px){
 				width: 85%;
 				left: 50%;
 				transform:translateX(-50%);
@@ -39,14 +39,14 @@
 				left: 50%;
 				top: 50%;
 				transform:translate(-50%, -50%);
-				@media screen and(max-width: 375px){
+				@media screen and(max-width: 768px){
 					width: 100%;
 					top: 0;
 					transform:translate(-50%);
         		}
 				img{
 					width: 100px;
-				@media screen and(max-width: 375px){
+				@media screen and(max-width: 768px){
 					width: 60px;
         		}
 				}

@@ -4,14 +4,14 @@
 	display: flex;
 	padding-top: 100px;
 	background: linear-gradient(to bottom, #1d1d1d 0%,#333333 100%);
-	  @media screen and(max-width: 375px){
+	  @media screen and(max-width: 768px){
             display: block;
         } 
 	&_contents{
 		margin: 40px;
 		position: relative;
 		width: 60%;
-		@media screen and(max-width: 375px) {
+		@media screen and(max-width: 768px) {
 			margin: 0px;
 			width: 85%;
 			left: 50%;
@@ -39,7 +39,7 @@
 	&_img{
 		position: relative;
 		width: 40%;
-		@media screen and(max-width: 375px){
+		@media screen and(max-width: 768px){
             display: none;
         } 
 		img{
