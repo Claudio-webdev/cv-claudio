@@ -177,6 +177,7 @@
         }
         &_mobile{
             display: none;
+            font-family: 'hey_augustregular';
             @media screen and (max-width: 768px){
                 display: block;
                 top: 35%;
@@ -201,11 +202,13 @@
         h1{
             position: relative;
             width: 100%;
-            font-size: 60px;
+            font-size: 90px;
             padding-bottom: 50px;
         }
         p{
-            font-size: 30px;
+            font-size: 40px;
+            font-family: 'hey_augustregular';
+
         }
         button{
             position: relative;
