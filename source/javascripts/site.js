@@ -3,7 +3,7 @@ const menuBtns     = Array.from(document.querySelectorAll('.js-toSection'))
 const topBar       = document.querySelector('.js-top')
 const goBack       = document.querySelector('.js-toTop')
 const about        = document.querySelector('.js-about')
-const skill   = document.querySelector('.js-skill')
+const skill        = document.querySelector('.js-skill')
 const contact      = document.querySelector('.js-contact')
 const goDown       = document.querySelector('.js-goDown')
 const menuOpen     = document.querySelector('.js-openMenu')
@@ -24,7 +24,6 @@ var index = 0;
   init() 
 }
  
-
 function init(){
   reset()
   setHome()
@@ -52,8 +51,6 @@ dropdownList.forEach((el,i)=>{
    el.addEventListener('click',()=> {
         goToSection(i)
         close()
-
-
     })
 
 })
@@ -93,8 +90,6 @@ function goToSection(i) {
         behavior: 'smooth'
       })      
   }
-
-
 }
 
 //ANIMATIONS
@@ -159,7 +154,6 @@ if (window.innerWidth > 375){
   })
 }
 //click event
-
   menuOpen.addEventListener('click',()=>{
     open()
   })
@@ -167,7 +161,6 @@ if (window.innerWidth > 375){
   menuClose.addEventListener('click',()=>{
     close()
   })
-
 function close(){
   menuOpen.classList.toggle('hide')
   menuClose.classList.toggle('hide')
