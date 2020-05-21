@@ -3,7 +3,7 @@ const menuBtns     = Array.from(document.querySelectorAll('.js-toSection'))
 const topBar       = document.querySelector('.js-top')
 const goBack       = document.querySelector('.js-toTop')
 const about        = document.querySelector('.js-about')
-const experience   = document.querySelector('.js-experience')
+const skill   = document.querySelector('.js-skill')
 const contact      = document.querySelector('.js-contact')
 const goDown       = document.querySelector('.js-goDown')
 const menuOpen     = document.querySelector('.js-openMenu')
@@ -85,7 +85,7 @@ function goToSection(i) {
           behavior: 'smooth'
       })
   } else if (i == 1) {
-    experience.scrollIntoView({
+    skill.scrollIntoView({
         behavior: 'smooth'
       }) 
     }else if (i == 2){

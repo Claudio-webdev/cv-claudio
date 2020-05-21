@@ -32,7 +32,7 @@ body {
   line-height: 1;
   background-color: #1d1d1d;
   color: #dfe0e4;
-  font-family: 'kanitextralight';
+  font-family: 'heebolight';
   display: block;
   width: 100%;
   position: relative;
@@ -64,11 +64,28 @@ h1{
     font-family: 'hey_augustregular';
 }
 h2{
-  font-family: 'kanitmedium';
+  font-family: 'heebomedium';
   font-size: 50px;
   @media screen and (max-width: 768px){
     font-size: 35px;
   }
+}
+h3{
+  font-family: 'heebobold';
+  font-size: 30px;
+  padding-top: 20px;
+}
+h4{
+  font-family: 'heeboregular';
+  font-size: 30px;
+  padding: 40px 0;
+    @media screen and (max-width: 768px){
+    font-size: 25px;
+  }
+}
+b{
+  font-family: 'heebobold';
+  font-size: 23px;
 }
 .right-20{
   margin-right: 20px;
@@ -91,10 +108,11 @@ h2{
   -webkit-filter: blur(8px);
 }
 
+
 @import "header.css.scss";
 @import "font.css.scss";
 @import "about.css.scss";
-@import "experience.css.scss";
+@import "skill.css.scss";
 @import "footer.css.scss";
 @import "gallery.css.scss";
 

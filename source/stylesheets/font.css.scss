@@ -1,28 +1,38 @@
 @font-face {
     font-family: 'hey_augustregular';
     src: url('./fonts/hey_august-webfont.woff2') format('woff2'),
-         url('/fonts/hey_august-webfont.woff') format('woff');
+         url('./fonts/hey_august-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'kanitextrabold';
-    src: url('./fonts/kanit-extrabold-webfont.woff2') format('woff2'),
-         url('./fonts/kanit-extrabold-webfont.woff') format('woff');
+    font-family: 'heebobold';
+    src: url('./fonts/heebo-bold-webfont.woff2') format('woff2'),
+         url('./fonts/heebo-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'kanitextralight';
-    src: url('./fonts/kanit-extralight-webfont.woff2') format('woff2'),
-         url('./fonts/kanit-extralight-webfont.woff') format('woff');
+    font-family: 'heebolight';
+    src: url('./fonts/heebo-light-webfont.woff2') format('woff2'),
+         url('./fonts/heebo-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 @font-face {
-    font-family: 'kanitmedium';
-    src: url('./fonts/kanit-medium-webfont.woff2') format('woff2'),
-         url('./fonts/kanit-medium-webfont.woff') format('woff');
+    font-family: 'heebomedium';
+    src: url('./fonts/heebo-medium-webfont.woff2') format('woff2'),
+         url('./fonts/heebo-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+@font-face {
+    font-family: 'heeboregular';
+    src: url('./fonts/heebo-regular-webfont.woff2') format('woff2'),
+         url('./fonts/heebo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
