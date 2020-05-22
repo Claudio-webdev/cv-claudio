@@ -1,12 +1,12 @@
 .skill{
 	display: block;
-	padding: 60px;
+	padding: 200px 60px 60px 60px ;
 	text-align: center;
 	@media screen and (max-width: 375px){
 		padding: 60px 0;
 	}
 	h2{
-		color: #FF2400;
+		color: #e44d42;
 	}
 	&-wrapper{
 		width: 80%;
@@ -38,7 +38,7 @@
 			}
 			i{
 				margin-right: 15px;
-				color:#FF2400;
+				color:#e44d42;
 			}
 		}
 		&_mobile{
@@ -53,10 +53,10 @@
 		position: relative;
 		width: 250px;
 		height: 250px;
-		background-color: #1d1d1d;
-		border-bottom: 1px solid #333333;
-		border-right: 1px solid #333333;
+		background-color: #0d3d33;
+		border-right: 1px solid #85cb33;
 		text-align: center;
+		transition: all ease 1s;
 			@media screen and (max-width: 768px){
 				border: none;
 				width: 100%;
@@ -70,7 +70,7 @@
 		&_right{
 			border-right: none;
 		&:hover{
-			border-left: 1px solid #333333;
+			border-left: 1px solid #85cb33;
 			}
 		}
 	}

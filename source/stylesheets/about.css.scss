@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	display: block;
-	padding-top: 100px;
+	padding-top: 10px;
 	@media screen and (max-width: 768px){
 		padding-top: 0px;
 	}
@@ -16,19 +16,18 @@
             padding-top: 100px;
         } 
 		&-halfside{
-			margin: 60px;
 			position: relative;
+			left: 50%;
 			width: 50%;
+			transform:translateX(-50%);
 			@media screen and(max-width: 768px){
 				width: 85%;
-				left: 50%;
-				transform:translateX(-50%);
 				margin: 0px;
         	} 
 
 			h2{
 				padding-bottom: 80px ;
-				color: #FF2400;
+				color: #e44d42;
 			}
 			p{
 				font-size: 20px;
@@ -40,7 +39,7 @@
 				text-decoration: none;
 				color: #dfe0e4;
     			&:hover{
-					color: #FF2400;
+					color: #e44d42;
     			}
 
 			}

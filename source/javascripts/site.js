@@ -5,7 +5,6 @@ const goBack       = document.querySelector('.js-toTop')
 const about        = document.querySelector('.js-about')
 const skill        = document.querySelector('.js-skill')
 const contact      = document.querySelector('.js-contact')
-const goDown       = document.querySelector('.js-goDown')
 const menuOpen     = document.querySelector('.js-openMenu')
 const menuList     = document.querySelector('.js-menuList')
 const menuClose    = document.querySelector('.js-closeMenu')
@@ -65,11 +64,7 @@ menuBtns.forEach((el,i)=>{
   }, i * 200);
 })
 
-goDown.addEventListener('click', ()=>{
-      about.scrollIntoView({
-          behavior: 'smooth'
-      })
-})
+
 goBack.addEventListener('click', ()=>{
       topBar.scrollIntoView({
           behavior: 'smooth'
@@ -128,7 +123,7 @@ function titleAnimation(){
     setTitle(el)
 
     setTimeout(() => {
-        gsap.to(el, {opacity: 1, x:0, color: "#dfe0e4", duration: 1, onComplete: add()});
+        gsap.to(el, {opacity: 1, x:0, color: "#dfe0e4",  duration: 2, onComplete: add()});
       }, i * 100);
   })  
 }
@@ -155,6 +150,10 @@ if (window.innerWidth > 375){
 }
 //click event
   menuOpen.addEventListener('click',()=>{
+    var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
+    tl.to("#id", {x: 100, duration: 1});
+    tl.to("#id", {y: 50, duration: 1});
+    tl.to("#id", {opacity: 0, duration: 1});
     open()
   })
 
@@ -173,3 +172,25 @@ function open(){
   menuList.classList.toggle('hide')
   filter.classList.toggle('blur')
 }
+
+
+// hover btn menu header
+
+
+menuBtns.forEach((el)=>{
+  el.addEventListener('mouseenter', e =>{
+    gsap.to(el,{
+      backgroundColor: "transparent"
+    })
+  })
+  el.addEventListener('mouseleave', e =>{
+    gsap.to(el,{
+      backgroundColor: "#e44d42"
+    })
+  })
+})
+
+
+
+
+//

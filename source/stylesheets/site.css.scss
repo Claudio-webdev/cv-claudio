@@ -30,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  background-color: #1d1d1d;
+  //background-color: #1d1d1d;
+  background-color: #0d3d33;
   color: #dfe0e4;
   font-family: 'heebolight';
   display: block;
@@ -108,7 +109,10 @@ b{
      filter: blur(8px);
   -webkit-filter: blur(8px);
 }
-
+span{
+  display: inline-block;
+  margin: -12px;
+}
 
 @import "header.css.scss";
 @import "font.css.scss";
